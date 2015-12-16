@@ -1,0 +1,6 @@
+    <ul class="box-row">
+      <li><label class="w20 align-right"><span class="required">*</span>AREA - NAME</label><input class="text w05 numeric required" maxl="5" type="text" name="AREA"> - <input class="text w20 required" maxl="60" type="text" name="NAME"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>ALAMAT</label><input class="text w50 required" maxl="200" type="text" name="ADDR"></li>
+      <li><label class="w20 align-right noline">BEGDA</label><input value="<?php print date('Y-m');?>-01" format="Y-m-d" class="text text-calendar align-right required w10" type="text" name="BEGDA"><input setview="BEGDA" class="trigger date" type="button" name="BEGDA_BUTTON"><label class="w08 noline align-right">ENDDA</label><input format="Y-m-d" class="text text-calendar align-right w10" type="text" name="ENDDA"><input setview="ENDDA" class="trigger date" type="button" name="ENDDA_BUTTON"></li>
+      <li><grid name="TABLE" datasource="vfs/parameters/AreaT/"></grid></li>
+    </ul>

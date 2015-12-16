@@ -1,0 +1,5 @@
+    <ul class="box-row">
+      <li><label class="w20 align-right"><span class="required">*</span>AREA - SUB AREA</label><select initialize="true" datasource="vfs/DS/area" listeners="AREA_SUB" class="text required searchbox" name="AREA"></select><select datasource="vfs/DS/subArea" depends="AREA" listeners="TABLE" class="text required" name="AREA_SUB"><option value="">PILIH</option></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>BUS.A - COST - PRFT</label><input class="text w05 numeric required" maxl="7" type="text" name="BUS_AREA"> - <input class="text w10 alnum required" maxl="7" type="text" name="COST_CTR"> - <input class="text w10 alnum required" maxl="7" type="text" name="PRFT_CTR"></li>
+      <li><grid name="TABLE" datasource="vfs/parameters/SAPT/"></grid></li>
+    </ul>

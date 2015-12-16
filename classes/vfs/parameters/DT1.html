@@ -1,0 +1,5 @@
+    <ul class="box-row">
+      <li><label class="w20 align-right"><span class="required">*</span>PROPINSI - NAME</label><input class="text w05 numeric required" maxl="2" type="text" name="ID_DT1"> - <input class="text w30 required" maxl="60" type="text" name="DT1_NAME"></li>
+      <li><label class="w20 align-right noline">BEGDA</label><input value="<?php print date('Y-m');?>-01" format="Y-m-d" class="text text-calendar align-right required w10" type="text" name="BEGDA"><input setview="BEGDA" class="trigger date" type="button" name="BEGDA_BUTTON"><label class="w08 noline align-right">ENDDA</label><input format="Y-m-d" class="text text-calendar align-right w10" type="text" name="ENDDA"><input setview="ENDDA" class="trigger date" type="button" name="ENDDA_BUTTON"></li>
+      <li><grid name="TABLE" datasource="vfs/parameters/DT1T/"></grid></li>
+    </ul>

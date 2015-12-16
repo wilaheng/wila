@@ -1,0 +1,7 @@
+    <input type="hidden" name="CONFIRM">
+    <ul class="box-row">
+      <li class="nopadding"><label class="w20 align-right noline">PACKAGE</label><input class="w05 mono noborder numeric" maxl="20" type="text" name="PKG"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>CODE - NAME</label><input class="text w05 required" maxl="5" type="text" name="CODE"> - <input class="text w20 required" maxl="40" type="text" name="NAME"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>STATUS</label><select no-empty="true" class="text required" type="text" name="CHECKED" initialize="true" datasource="vfs/DS/status"><option value="">PILIH</option></select></li>
+      <li><grid name="TABLE" datasource="vfs/forms/PackagesT/"></grid></li>
+    </ul>

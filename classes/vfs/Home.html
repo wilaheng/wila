@@ -1,0 +1,9 @@
+  <form method="GET" namespace="R@vfs/">
+<?php if ($_SESSION["ELAPSED"] <= 7): ?>
+    <fieldset class="box-note">
+      <ul class="box-row">
+        <li class="mono center"><?php print ($_SESSION["ELAPSED"] > 0) ? inf()->html->expired($_SESSION["ELAPSED"]) : "Silahkan ganti password Anda"; ?></li>
+      </ul>
+    </fieldset>
+<?php endif; ?>
+  </form>

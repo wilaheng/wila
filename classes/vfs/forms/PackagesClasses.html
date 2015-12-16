@@ -1,0 +1,12 @@
+    <input type="hidden" name="PKG_COPY">
+    <input type="hidden" name="PID_COPY">
+    <input type="hidden" name="DOWNLOAD">
+    <ul class="box-row">
+      <li><label class="w20 align-right"><span class="required">*</span>PACKAGE - PID</label><select initialize="true" datasource="vfs/DS/packages" listeners="PID;TABLE" class="text required searchbox" type="text" name="PKG"></select><select initialize="false" datasource="vfs/DS/parentPackages" depends="PKG" class="text required" type="text" name="PID"><option value="">PILIH</option></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>CID</label><input class="text numeric w10 required" maxl="9" type="text" name="PKC"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>NAME - DISPLAY</label><input class="text w10 required" maxl="40" type="text" name="NAME"> - <input class="text w20 required" maxl="40" type="text" name="DISP"></li>
+      <li><label class="w20 align-right">TITLE - DESC</label><input class="text w10" maxl="40" type="text" name="TITLE"> - <input class="text w30" type="text" name="DESC"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>TYPE</label><select class="text required" type="text" name="TYPE"><option value="F">F. FORM</option><option value="R">R. REPORT</option><option value="O">O. OPEN FOLDER</option><option value="C">C. CLOSE FOLDER</option><option value="Z">Z. CUSTOM</option></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>STATUS - FITUR</label><select class="text required searchbox" type="text" name="CHECKED" initialize="true" datasource="vfs/DS/status"></select><select class="text required" type="text" name="FTR"><option value="0">N</option><option value="1">Y</option></select></li>
+      <li><grid name="TABLE" datasource="vfs/forms/PackagesClassesT/"></grid></li>
+    </ul>

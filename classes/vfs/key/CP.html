@@ -1,0 +1,12 @@
+    <input type="hidden" name="STAT" value="010">
+    <fieldset class="box-note">
+      <ul class="box-row">
+        <li class="mono center">Password <font class="red">minimal 8 karakter</font>, terdiri dari kombinasi <font class="red">huruf besar, kecil dan angka</font>.</li>
+      </ul>
+    </fieldset>
+    <ul class="box-row">
+      <li><label class="w20 align-right noline">Password Baru</label><input class="text w20 required" maxlength="50" type="password" name="PWD" listeners="PWD_CHECK">&nbsp;&nbsp;<img id="PWD_IMG" src="asset/16/actions/decrypt.gif"><input type="hidden" name="PWD_CHECK" callback="vfs/key/CP/check" depends="PWD"></li>
+      <li><label class="w20 align-right noline">Konfirmasi Password Baru</label><input class="text w20 required" maxlength="50" type="password" name="PWD_CONFIRM"></li>
+      <li class="nopadding"><label class="w20 align-right noline"></label><img id="CAP_IMG" src="./vfs/key/CC/?<?php print time(); ?>"></li>
+      <li><label class="w20 align-right noline">Input Captcha</label><input class="text w10 searchbox" maxlength="100" type="text" name="CAPTCHA"><input class="w10" callback="vfs/key/CP/reload" type="button" name="RELOADCAPTCHA" value="RELOAD"></li>
+    </ul>

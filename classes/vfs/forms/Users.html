@@ -1,0 +1,28 @@
+    <input type="hidden" name="USR_COPY">
+    <input type="hidden" name="SEARCH" listeners="SEARCH_CALLBACK">
+    <input type="hidden" name="SEARCH_CALLBACK" callback="vfs/forms/Users/GET" depends="USR">
+    <input type="hidden" name="RESET_CALLBACK">
+    <ul class="box-row">
+      <li><label class="w20 align-right search"><span class="required">*</span>USERNAME</label><input change="vfs/forms/Users/GET" class="search text w15 required" maxl="10" type="text" name="USR"> <small>press ENTER to search</small></li>
+      <li><label class="w20 align-right"><span class="required">*</span>NAMA</label><input class="text w35 required" maxl="200" type="text" name="NAME"></li>
+      <li><label class="w20 align-right">PASSWORD - CONFIRM</label><input class="text w15" maxl="32" type="password" name="PWD"> - <input class="text w15" maxl="32" type="password" name="PWD_CONFIRM"></li>
+      <li><label class="w20 align-right noline">FORCE TO CHANGE PASSWORD</label><input class="text" type="checkbox" name="F2CPWD" value="1"></li>
+      <li><label class="w20 align-right noline">BEGDA</label><input value="<?php print date('Y-m-d');?>" format="Y-m-d" class="text text-calendar align-right required w10" type="text" name="BEGDA"><input setview="BEGDA" class="trigger date" type="button" name="BEGDA_BUTTON"><label class="w08 noline align-right">ENDDA</label><input format="Y-m-d" class="text text-calendar align-right w10" type="text" name="ENDDA"><input setview="ENDDA" class="trigger date" type="button" name="ENDDA_BUTTON"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>GENDER</label><select initialize="true" datasource="vfs/DS/gender" class="text required" type="text" name="GENDER"></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>AREA - SUB AREA</label><select initialize="true" datasource="vfs/DS/area" listeners="AREA_SUB" class="text required searchbox" type="text" name="AREA"></select><select datasource="vfs/DS/subArea" depends="AREA" class="text required" type="text" name="AREA_SUB"><option value="">PILIH</option></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>POSITION</label><select initialize="true" datasource="vfs/DS/positions" class="text required" type="text" name="ID_POSITION"></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>SHARED</label><select initialize="true" datasource="vfs/DS/status" class="text required" type="text" name="SHR"></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>DEFAULT MODULE</label><select initialize="true" datasource="vfs/DS/modules" class="text required" type="text" name="DEF"></select></li>
+      <li><label class="w20 align-right">GROUP</label><select initialize="true" datasource="vfs/forms/UsersGroupsT/groups" class="text searchbox" type="text" name="GRP" depends="USR"></select><input callback="vfs/forms/UsersGroupsT/addClick" depends="GRP" type="button" name="addGroup" value="TAMBAHKAN"></li>
+      <li><grid name="USER_GROUPS" datasource="vfs/forms/UsersGroupsT/"></grid></li>
+    </ul>
+    <fieldset class="mono box-note nomargin logbox">
+      <ul class="box-row nopadding nomargin">
+        <li class="nopadding"><label class="w10 align-right noline mono">EXPIRED:</label><input readonly="true" format="Y-m-d" style="width:160px" class="mono noborder" type="text" name="EXP"></li>
+        <li class="nopadding"><label class="w10 align-right noline mono">CREATED:</label><input readonly="true" format="Y-m-d" style="width:160px" class="mono noborder" type="text" name="C_DATE"></li>
+        <li class="nopadding"><label class="w10 align-right noline mono">BY:</label><input readonly="true" class="mono noborder" type="text" name="C_USER"></li>
+        <li class="nopadding"><label class="w10 align-right noline mono">UPDATED:</label><input readonly="true" format="Y-m-d" style="width:160px" class="mono noborder" type="text" name="U_DATE"></li>
+        <li class="nopadding"><label class="w10 align-right noline mono">BY:</label><input readonly="true" class="mono noborder" type="text" name="U_USER"></li>
+      </ul>
+    </fieldset>
+    <!--img id="PICT" src="asset/user.gif" style="position:absolute;right:6px;top:120px;padding:0;margin:0"-->

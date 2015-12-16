@@ -1,0 +1,8 @@
+    <input type="hidden" name="GRP_COPY">
+    <ul class="box-row">
+      <li class="nopadding"><label class="w20 align-right noline"></label><input readonly="true" class="w05 mono noborder numeric" type="text" name="PKG_COPY"><input readonly="true" class="w05 mono noborder numeric" type="text" name="PKC_COPY"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>PACKAGE - GROUP</label><select initialize="true" datasource="vfs/DS/packages" listeners="GRP" class="text required searchbox" type="text" name="PKG"><option value="">PILIH</option></select><select datasource="vfs/forms/GroupsClasses/groups" depends="PKG" listeners="TABLE;PKC" class="text required" type="text" name="GRP"><option value="">PILIH</option></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>CLASS</label><select datasource="vfs/forms/GroupsClasses/classes" depends="GRP;PKG" class="text" type="text" name="PKC"><option value="">PILIH</option></select></li>
+      <li><label class="w20 align-right"><span class="required">*</span>ACL</label><input placeholder="ex: 10101" maxlength="5" mask="^[01][01][01][01][01]$" class="text numeric w10 required" maxl="5" minl="5" type="text" name="ACL">&nbsp;&nbsp;&nbsp;<b>POST . PUT . DELETE . GET . HEAD</b></li>
+      <li><grid name="TABLE" datasource="vfs/forms/GroupsClassesT/"></grid></li>
+    </ul>

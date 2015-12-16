@@ -1,0 +1,6 @@
+    <ul class="box-row">
+      <li class="nopadding"><label class="w20 align-right noline">&nbsp</label><input readonly="true" class="mono w20 noborder" type="text" name="FTR_COPY" value="-"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>PACKAGE - CLASS</label><select initialize="true" datasource="vfs/DS/packages" listeners="PKC;FTR" class="text required searchbox" type="text" name="PKG"></select><select initialize="false" datasource="vfs/DS/parentClassPackages" listeners="FTR;TABLE" depends="PKG" class="text required" type="text" name="PKC"><option value="">PILIH</option></select></li>
+      <li><label class="w20 align-right">FEATURE</label><select initialize="false" datasource="vfs/DS/packagesClassesFeatures" depends="PKG;PKC" class="text" type="text" name="FTR"><option value="">PILIH</option></select></li>
+      <li><grid name="TABLE" datasource="vfs/forms/PackagesFeaturesT/"></grid></li>
+    </ul>

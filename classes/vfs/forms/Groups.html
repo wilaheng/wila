@@ -1,0 +1,12 @@
+    <input type="hidden" name="GRP_COPY">
+    <ul class="box-row">
+      <li><label class="w20 align-right"><span class="required">*</span>GROUP - NAME</label><input class="text w10 required" minl="4" type="text" name="GRP"> - <input class="text w30 required" maxl="40" type="text" name="NAME"></li>
+      <li><label class="w20 align-right noline"><span class="required">*</span>BEGDA</label><input class="text text-calendar align-right required w10" type="text" name="BEGDA"><input setview="BEGDA" class="trigger date" type="button" name="BEGDA_BUTTON"><label class="w08 align-right noline">ENDDA</label><input class="text text-calendar align-right w10" type="text" name="ENDDA"><input setview="ENDDA" class="trigger date" type="button" name="ENDDA_BUTTON"></li>
+      <li><grid name="TABLE" datasource="vfs/forms/GroupsT/"></grid></li>
+    </ul>
+    <fieldset class="mono box-note nomargin logbox">
+      <ul class="box-row nopadding nomargin">
+        <li class="nopadding"><label class="w10 align-right noline mono">CREATED:</label><input readonly="true" format="Y-m-d" style="width:160px" class="mono noborder" type="text" name="C_DATE"></li>
+        <li class="nopadding"><label class="w10 align-right noline mono">BY:</label><input readonly="true" class="mono noborder" type="text" name="C_USER"></li>
+      </ul>
+    </fieldset>

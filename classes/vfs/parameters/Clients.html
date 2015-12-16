@@ -1,0 +1,7 @@
+    <input type="hidden" name="CID_COPY">
+    <ul class="box-row">
+      <li class="nopadding"><label class="w20 align-right noline"><sup>auto</sup>CID</label><input class="text w05 numeric" maxl="20" type="text" name="CID"></li>
+      <li><label class="w20 align-right"><span class="required">*</span>ADDR</label><input class="text w30 required" maxl="40" type="text" name="ADDR"></li>
+      <li><label class="w20 align-right noline">BEGDA</label><input value="<?php print date('Y-m-d');?>" format="Y-m-d" class="text text-calendar align-right required w10" type="text" name="BEGDA"><input setview="BEGDA" class="trigger date" type="button" name="BEGDA_BUTTON"><label class="w08 noline align-right">ENDDA</label><input format="Y-m-d" class="text text-calendar align-right w10" type="text" name="ENDDA"><input setview="ENDDA" class="trigger date" type="button" name="ENDDA_BUTTON"></li>
+      <li><grid name="TABLE" datasource="vfs/parameters/ClientsT/"></grid></li>
+    </ul>
