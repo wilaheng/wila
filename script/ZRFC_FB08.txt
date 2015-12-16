@@ -1,0 +1,130 @@
+array(
+  	 array(
+  		 "name"=>"BELNR",
+  		 "type"=>"EXPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>10, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"BUKRS",
+  		 "type"=>"EXPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>4, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"E_BUDAT",
+  		 "type"=>"EXPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"D", "len"=>8, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"E_MONAT",
+  		 "type"=>"EXPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"N", "len"=>2, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"GJAHR",
+  		 "type"=>"EXPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"N", "len"=>4, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"MESSAGE_TEXT",
+  		 "type"=>"EXPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>255, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_BELNR",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>10, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_BUDAT",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"1",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"D", "len"=>8, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_BUKRS",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>4, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_BVORG",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"1",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>16, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_GJAHR",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"N", "len"=>4, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_MODE",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"1",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>1, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_MONAT",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"1",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"N", "len"=>2, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_STGRD",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"0",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>2, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_UPDATE",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"1",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>1, "dec"=>0, "offset"=>0)
+  			)
+  	),
+  	 array(
+  		 "name"=>"I_XSIMU",
+  		 "type"=>"IMPORT",
+  		 "optional"=>"1",
+  		 "def"=> array (
+  			 array("name"=>"", "abap"=>"C", "len"=>1, "dec"=>0, "offset"=>0)
+  			)
+  	)
+); 
